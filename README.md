@@ -471,13 +471,14 @@ $ sudo service lighttpd force-reload
 ### #3: File Transfer Protocol *(FTP)*
 
 #### Step 1: Installing & Configuring FTP
-Install FTP via `sudo apt install vsftpd`.
+Install FTP via `sudo apt install vsftpd/ftp`.
 ```
 $ sudo apt install ftp
 $ sudo apt install vsftpd
 ```
-Verify whether *vsftpd* was successfully installed via `dpkg -l | grep vsftpd`.
+Verify whether *vsftpd/ftp* was successfully installed via `dpkg -l | grep vsftpd/ftp`.
 ```
+$ dpkg -l | grep ftp
 $ dpkg -l | grep vsftpd
 ```
 Allow incoming connections using Port 21 via `sudo ufw allow 21`.
