@@ -19,8 +19,8 @@ ip=$(hostname -I)
 ctcp=$(cat /proc/net/sockstat{,6} | awk '$1 == "TCP:" {print $3}')
 mac=$(ip link show | awk '$1 == "link/ether" {print $2}')
 cmds=$(journalctl _COMM=sudo | grep COMMAND | wc -l)
-wall
-"	#Architecture : $arc
+wall << EOF
+	#Architecture : $arc
 	#CPU physical : $p_cpu
 	#vCPU : $v_cpu
 	#Memory Usage : $usage_ram/${total_ram}MB ($p_ram%)
@@ -31,4 +31,5 @@ wall
 	#Connections TCP : $ctcp ESTABLISHED
 	#User log : $users_log
 	#Network : IP $ip ($mac)
-	#Sudo: $cmds cmd"
+	#Sudo: $cmds cmd
+EOF
