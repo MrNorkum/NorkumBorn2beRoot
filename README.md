@@ -116,9 +116,9 @@ Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 ## SSH
 
 ### Step 1: Installing & Configuring SSH
-Install *openssh-server* via `sudo apt install openssh-server`.
+Install *openssh-server* via `sudo apt install ssh`.
 ```
-$ sudo apt install openssh-server
+$ sudo apt install ssh
 ```
 Verify whether *openssh-server* was successfully installed via `dpkg -l | grep ssh`.
 ```
