@@ -1,3 +1,5 @@
+#!/bin/bash
+
 arc=$(uname -a)
 p_cpu=$(nproc)
 v_cpu=$(getconf _NPROCESSORS_ONLN)
