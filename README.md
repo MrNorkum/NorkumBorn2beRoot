@@ -19,7 +19,7 @@
 5. [*cron*](#cron)
     - [Setting Up a *cron* Job](#setting-up-a-cron-job)
 6. [Monitoring](#monitoring)
-7. [Bonus](#bonus
+7. [Bonus](#bonus)
     - [Linux Lighttpd MariaDB PHP *(LLMP)* Stack](#1-linux-lighttpd-mariadb-php-llmp-stack)
        - [Step 1: Installing Lighttpd](#step-1-installing-lighttpd)
        - [Step 2: Installing & Configuring MariaDB](#step-2-installing--configuring-mariadb)
