@@ -32,8 +32,6 @@
 
 8. [Submission and peer-evaluation for 1337/42 Students](#peereval)
 
-9. [evalknowledge.txt](#evalknowledge)
-
 ## Installation
 [Click](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/) to download the latest version of Debian.
 
