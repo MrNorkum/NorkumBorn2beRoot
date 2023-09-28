@@ -2,7 +2,7 @@
 arc=$(uname -a)
 p_cpu=$(nproc)
 v_cpu=$(getconf _NPROCESSORS_ONLN)
-mem_usage=$(free -m | grep 'Mem' | awk '{printf("%d/%dMB(%.2f%%)", $3,$2, $3/$2 * 100)}')
+mem_usage=$(free --mega | grep 'Mem' | awk '{printf("%d/%dMB(%.2f%%)", $3,$2, $3/$2 * 100)}')
 usage_disk=$(df --total -BM | awk '/total/ {print $3}')
 total_disk=$(df --total -h | awk '/total/ {print $2}')
 p_disk=$(df --total | awk '/total/ {print $5}')
