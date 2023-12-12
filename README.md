@@ -70,7 +70,7 @@ Restart with `reboot` for the changes to take effect.
 ### Step 3: Configuring *sudo*
 Configure *sudo* via `sudo vi /etc/sudoers.d/sudoers`.
 ```
-$ sudo vi /etc/sudoers.d/sudoers
+$ sudo vi /etc/sudoers
 ```
 Add the following line to the file to limit authentication to 3 attempts in case of incorrect password.
 ```
